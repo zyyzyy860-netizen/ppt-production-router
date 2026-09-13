@@ -20,7 +20,15 @@ npx skills add https://github.com/zyyzyy860-netizen/ppt-production-router --skil
 
 ## 怎么用
 
-在 Codex 里直接说明任务和交付要求，例如：
+在 Codex 里直接输入主题即可：
+
+```text
+做一个关于香蕉的 PPT
+```
+
+默认会生成 10 页、16:9、可编辑的 PPTX，并自动选择黑板粉笔、黑白水墨或水彩视觉风格。只有你主动提出“视频成片”“海报感”或“无需编辑”时，才会改用整页生图路线。
+
+也可以补充要求，例如：
 
 ```text
 用 ppt-production-router 做一份“香蕉的旅行地图”课堂汇报。

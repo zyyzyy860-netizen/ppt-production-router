@@ -14,9 +14,9 @@ Use one mode per deck. A subject-derived illustration, line, or diagram should c
 
 ## Delivery truthfulness
 
-### Editable live-demo
+### Default editable PPTX
 
-Use native PowerPoint shapes/text or a static HTML deck with literal editable text. Keep headings, labels, process arrows, tables, and charts native. Generated watercolor or chalk art may be used as a replaceable background or isolated image object. State exactly which parts are editable.
+Use native PowerPoint shapes/text or a static HTML deck with literal editable text. Keep headings, labels, process arrows, tables, and charts native. Generated watercolor or chalk art may be used as a replaceable background or isolated image object. This is the default for a topic-only request.
 
 ### Image-first final visual
 
@@ -28,4 +28,4 @@ Use `baoyu-slide-deck` when a consistent illustrated page is the product and fut
 - Assign each accent a stable role: yellow for subject/energy, blue for process, green for nature/approval, pink for contrast or caution.
 - Keep text sparse and legible at presentation distance. Handwritten styling must not reduce readability.
 - Give diagrams real structure: arrows encode sequence, size encodes emphasis, and labels state actual concepts.
-- For live demos, prototype and open a cover, a process slide, and the densest slide before creating the full deck.
+- For all editable decks, prototype and open a cover, a process slide, and the densest slide before creating the full deck.

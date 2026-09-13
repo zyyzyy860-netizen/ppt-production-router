@@ -1,6 +1,6 @@
 ---
 name: ppt-production-router
-description: "Create distinctive blackboard, ink, or watercolor presentations with an explicit choice between editable live-demo decks and image-first final visuals. Use for client-ready decks; not for simple slide text edits."
+description: "Generate distinctive blackboard, ink, or watercolor presentations from a topic alone. Defaults to a 10-slide editable PowerPoint; use for client-ready decks, not simple text edits."
 ---
 
 # PPT Production Router
@@ -13,23 +13,24 @@ Default to a hand-rendered visual system: **blackboard chalk**, **black-and-whit
 
 Read [hand-rendered-modes.md](references/hand-rendered-modes.md) before choosing an engine for a blackboard, ink, or watercolor brief.
 
-## Start with the delivery constraint
+## Topic-first default
 
-Ask only if the answer is not evident from the request:
+Treat a topic-only request such as “做一个关于香蕉的 PPT” as complete. Do not ask the user to choose a tool, slide count, audience, delivery mode, or style.
 
-- Must the recipient edit text, tables, charts, or a mandated template in PowerPoint? Read [native-pptx.md](references/native-pptx.md).
-- Is this an on-screen talk, demo video, or shareable web presentation where visual impact matters more than native editing? Read [visual-deck.md](references/visual-deck.md).
-- Is the source a screenshot, PDF page, or image deck that needs editable reconstruction? Read [reconstruction.md](references/reconstruction.md).
-- Does the user want an installed workbench or self-hosted service rather than a one-off deck? Read [workbenches.md](references/workbenches.md).
+Use these defaults unless the user says otherwise:
 
-Also establish whether the user needs an **editable live-demo deck** or an **image-first final visual**. Never describe the latter as fully editable.
+- **Deliverable:** 10-slide, 16:9 editable `.pptx`.
+- **Visual direction:** select blackboard chalk for explainers/processes, black-and-white ink for analytical or cultural topics, and watercolor for nature/lifestyle topics.
+- **Audience:** a general university classroom audience.
+- **Content:** create a concise narrative arc, original illustrations as replaceable assets when useful, and native titles, labels, arrows, diagrams, and charts.
+- **Workflow:** make the cover, one normal content page, and the densest page first; inspect the real output; then complete the deck.
 
-If there is no fixed delivery constraint, default to an HTML/image-native deck for a video or live presentation, and native PPTX for a client handoff.
+Ask one concise question only when a provided template, brand, source file, language, factual dataset, or deadline is essential and missing. The only delivery-mode exception is an explicit request for a video insert, poster-like visual, or uneditable final image deck; then use `baoyu-slide-deck` and say that it is image-first.
 
 ## Operating rules
 
 1. Pick one primary engine. Do not combine generators merely to use more tools.
-2. Write a production contract before design: delivery format, reader context, required editability, source-data status, and the target reading speed. Do not let a tool silently redefine any of these.
+2. Infer the production contract from the topic-first defaults. Do not expose this internal step to the user unless an exception requires a decision.
 3. For a visual deck, decide whether it is **glance** (the point is clear in 3–10 seconds) or **editorial** (the audience can dwell for 30+ seconds). Do not mix both visual grammars casually. Read [editorial-visual-system.md](references/editorial-visual-system.md).
 4. Make a cover, a typical content slide, and the densest/data-heavy slide first. Preview or open the actual export before generating the rest.
 5. Give every slide one audience takeaway. A data slide must use a title that states the finding, then support it with an honest visual encoding, annotation, and source—not a decorative chart.
@@ -37,7 +38,7 @@ If there is no fixed delivery constraint, default to an HTML/image-native deck f
 7. If a data claim cannot be encoded honestly, state it as text or obtain the missing data. Do not manufacture density with arbitrary dots, fake detail, meaningless microcharts, or decorative interaction.
 8. For editable delivery, test the actual file at its intended runtime. Read [native-pptx.md](references/native-pptx.md).
 9. Before delivery, run the anti-homogenization check in [editorial-visual-system.md](references/editorial-visual-system.md). If the deck could be relabeled for an unrelated AI topic without changing its visual logic, revise its art direction.
-10. For blackboard, ink, or watercolor work, keep claims and labels as native text whenever live editing or later revision is required. Generated art may be a background or replaceable illustration, but it is not editable structure.
+10. Keep claims and labels as native text. Generated art may be a background or replaceable illustration, but it is not editable structure.
 
 Keep slide text short. If a page overflows, cut or split content; do not solve it by shrinking type. Use provided reference decks/templates as the source of truth for fixed branding, logos, footers, and layout constraints. Never install, start, deploy, sign into, or configure a workbench/service unless the user asks for that action.
 
