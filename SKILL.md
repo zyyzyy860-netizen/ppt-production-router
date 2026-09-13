@@ -9,7 +9,7 @@ Use this skill to choose one primary production path before making a deck. The g
 
 ## House visual identity
 
-Default to a hand-rendered visual system: **blackboard chalk**, **black-and-white ink**, or **watercolor**. Use the subject to choose among them; an explicit user style or an approved brand overrides this preference. Do not fall back to corporate cards, neon gradients, floating pills, or generic photo-and-sidebar layouts.
+Default to one distinct visual system: **blackboard chalk**, **black-and-white ink**, **watercolor**, or **monochrome editorial**. Use the subject to choose among them; an explicit user style or an approved brand overrides this preference. Do not fall back to corporate cards, neon gradients, floating pills, or generic photo-and-sidebar layouts.
 
 Read [hand-rendered-modes.md](references/hand-rendered-modes.md) before choosing an engine for a blackboard, ink, or watercolor brief.
 
@@ -19,8 +19,8 @@ Treat a topic-only request such as “做一个关于香蕉的 PPT” as complet
 
 Use these defaults unless the user says otherwise:
 
-- **Deliverable:** 10-slide, 16:9 editable `.pptx`.
-- **Visual direction:** select blackboard chalk for explainers/processes, black-and-white ink for analytical or cultural topics, and watercolor for nature/lifestyle topics.
+- **Deliverable:** 10-slide, 16:9 editable `.pptx`. If the user names a slide count (for example “做 6 页”), use that exact count.
+- **Visual direction:** select blackboard chalk for explainers/processes, black-and-white ink for analytical or cultural topics, watercolor for nature/lifestyle topics, and monochrome editorial for technology, business, strategy, research, or argument-led topics.
 - **Audience:** a general university classroom audience.
 - **Content:** create a concise narrative arc, original illustrations as replaceable assets when useful, and native titles, labels, arrows, diagrams, and charts.
 - **Workflow:** make the cover, one normal content page, and the densest page first; inspect the real output; then complete the deck.

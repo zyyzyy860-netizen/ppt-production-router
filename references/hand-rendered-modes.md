@@ -9,8 +9,17 @@ Use this reference when the presentation should feel illustrated rather than tem
 | Blackboard chalk | Teaching, explainers, processes | charcoal board, chalk white, 3–4 semantic chalk colors, imperfect lines, wooden edge only when it helps the classroom cue |
 | Black-and-white ink | Argument, research, reflective or cultural topics | white paper or pale gray, black brush marks, one restrained accent, generous whitespace |
 | Watercolor | Lifestyle, nature, soft narrative | paper texture, pigment bleed, hand-painted illustrations, sparse callouts |
+| Monochrome editorial | Technology, strategy, research, business argument | black or warm-ivory field, oversized serif display type, thin rules, quiet meta-labels, bold numbers, pale oversized index numeral |
 
 Use one mode per deck. A subject-derived illustration, line, or diagram should carry the visual interest; do not add cards merely to make the page busy.
+
+### Monochrome editorial rules
+
+- Work with black/near-black and warm ivory as the two primary canvases; reverse them between sections instead of adding decorative colors.
+- Pair a high-contrast serif display headline with a restrained sans-serif information layer. Chinese and English may share a line only when the contrast is intentional.
+- Use thin rules, small metadata, editorial quotations, and honest large figures to structure the page. A pale oversized page index may sit behind content as a low-contrast compositional element.
+- Prefer asymmetrical grids, wide margins, and two-column arguments. Do not use rounded cards, gradients, glass effects, or icon bubbles.
+- Every number must be sourced or explicitly framed as an illustration/example; do not manufacture statistics for visual impact.
 
 ## Delivery truthfulness
 
